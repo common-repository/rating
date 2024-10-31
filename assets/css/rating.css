@@ -1,0 +1,157 @@
+/*
+ * Copyright 2009-2011  Andrew Alba  (Alba Web Studio)
+ * The unique combination of images, colors, sizes, typography, 
+ * and positioning ("the design") of this plugin is copyright 
+ * Alba Web Studio (http://albawebstudio.com) and may not be reproduced.
+ */
+ 
+.FSR_container { }
+ 
+ /* FEEL FREE TO EDIT BELOW AT YOUR OWN RISK */
+.FSR_stars {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+* html .FSR_stars .star {
+	display: block;
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+.FSR_clearFix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.FSR_clearFix { display: inline-block; }
+html[xmlns] .FSR_clearFix { display: block; }
+* html .FSR_clearFix { height: 1%; }	
+.FSR_stars input {
+	display: none;
+}
+.FSR_important {
+	font-weight: 700;
+	color: red;
+}
+.post_title { float: left; width:300px; }
+.FSR_no_star, .FSR_half_star, .FSR_full_star, .FSR_no_voting_star, .FSR_half_voting_star, .FSR_full_voting_star,
+.FSR_no_abuse, .FSR_half_abuse, .FSR_full_abuse, .FSR_no_voting_abuse, .FSR_half_voting_abuse, .FSR_full_voting_abuse 
+.FSR_no_happy, .FSR_half_happy, .FSR_full_happy, .FSR_no_voting_happy, .FSR_half_voting_happy, .FSR_full_voting_happy 
+.FSR_no_thumb, .FSR_half_thumb, .FSR_full_thumb, .FSR_no_voting_thumb, .FSR_half_voting_thumb, .FSR_full_voting_thumb {
+	display: block;
+	float: left;
+	width: 17px;
+	height: 15px;
+	text-indent: -1000em;
+	text-align: left;
+	background-repeat: no-repeat;
+}
+.FSR_no_star {
+	background-image: url(../../assets/images/stars/rating_off.gif);
+}
+.FSR_full_star {
+	background-image: url(../../assets/images/stars/rating_over.gif);
+}
+.FSR_half_star {
+	background-image: url(../../assets/images/stars/rating_half_over.gif);
+}
+.FSR_no_voting_star {
+	background-image: url(../../assets/images/stars/rating_off.gif);
+}
+.FSR_full_voting_star {
+	background-image: url(../../assets/images/stars/rating_on.gif);
+}
+.FSR_half_voting_star {
+	background-image: url(../../assets/images/stars/rating_half.gif);
+}
+.FSR_no_abuse {
+	background-image: url(../../assets/images/abuse/no_star.gif);
+}
+.FSR_full_abuse {
+	background-image: url(../../assets/images/abuse/full_star.gif);
+}
+.FSR_half_abuse {
+	background-image: url(../../assets/images/abuse/half_star.gif);
+}
+.FSR_no_voting_abuse {
+	background-image: url(../../assets/images/abuse/no_star.gif);
+}
+.FSR_full_voting_abuse {
+	background-image: url(../../assets/images/abuse/full_voting_star.gif);
+}
+.FSR_half_voting_abuse {
+	background-image: url(../../assets/images/abuse/half_voting_star.gif);
+}
+.FSR_no_happy {
+	background-image: url(../../assets/images/happy/happy_off.gif);
+}
+.FSR_full_happy {
+	background-image: url(../../assets/images/happy/happy_over.gif);
+}
+.FSR_half_happy {
+	background-image: url(../../assets/images/happy/happy_half_over.gif);
+}
+.FSR_no_voting_happy {
+	background-image: url(../../assets/images/happy/happy_off.gif);
+}
+.FSR_full_voting_happy {
+	background-image: url(../../assets/images/happy/happy_on.gif);
+}
+.FSR_half_voting_happy {
+	background-image: url(../../assets/images/happy/happy_half.gif);
+}
+.FSR_no_thumb {
+	background-image: url(../../assets/images/thumb/thumb_off.png);
+}
+.FSR_full_thumb {
+	background-image: url(../../assets/images/thumb/thumb_over.png);
+}
+.FSR_half_thumb {
+	background-image: url(../../assets/images/thumb/thumb_half_over.png);
+}
+.FSR_no_voting_thumb {
+	background-image: url(../../assets/images/thumb/thumb_off.png);
+}
+.FSR_full_voting_thumb {
+	background-image: url(../../assets/images/thumb/thumb_on.png);
+}
+.FSR_half_voting_thumb {
+	background-image: url(../../assets/images/thumb/thumb_half.png);
+}
+.FSR_votes {
+	padding-left: .5em;
+}
+* html .FSR_moment_scores li, * html .FSR_month_scores li, * html .FSR_alltime_scores li {
+	list-style: none;
+}
+.FSR_month_scores, .FSR_moment_scores, .FSR_alltime_scores { list-style: none; }
+.trend_up, .trend_dw, .trend_eq {
+	display:block;
+	width: 14px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -100em;
+	float: left;
+	background-repeat: no-repeat;
+	margin-right: .5em;
+}
+.trend_up {
+	background-image: url(../../assets/images/stars/up_arrow.gif);
+}
+.trend_dw {
+	background-image: url(../../assets/images/stars/dw_arrow.gif);
+}
+.trend_eq {
+	background-image: url(../../assets/images/stars/eq_arrow.gif);
+}
+.FSR_moment_scores .FSR_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 21ex;
+	text-align: right;
+}
